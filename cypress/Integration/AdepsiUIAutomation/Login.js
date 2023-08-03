@@ -1,14 +1,13 @@
 //login Using Cypress 
 describe('Login Module of Adepsi', () => {
     it('User Should Visit to  Login page of Adepsi', () => {
-        cy.visit("https://demo.adepsi.cloud/") 
+        cy.LoginPage();
     });
-    it('Valid Login Credentials-Login must be Successful ', () => {
+    it('Valid Login Credentials-Login must be Successful And USer See Dashboard of Adepsi', () => {
         cy.viewport(2150,1075);
-        cy.visitLoginPage();
-        cy.get('#mat-input-0').type("demo.admin@adepsi.cloud")
-        cy.get('#mat-input-1').type('Ye3&M57g%kH?B3E$')
-        cy.get('.mat-ripple.app-button.font-bold').click();
+        cy.LoginPage();
+        cy.LoginInput();
+        cy.wait(2000);
     });
     
 });
