@@ -7,7 +7,7 @@ describe('Login Module of Adepsi', () => {
         cy.viewport(2150,1075);
         cy.LoginPage();
         cy.LoginInput();
-        cy.wait(2000);
+        cy.wait(5000);
     });
     
 });
