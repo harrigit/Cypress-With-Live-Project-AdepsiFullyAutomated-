@@ -5,5 +5,6 @@ describe("Audit Trail OF Adepsi", () => {
     cy.wait(4000);
 
     cy.AuditTrail();
+    cy.AddFiltersInLogs();
   });
 });
