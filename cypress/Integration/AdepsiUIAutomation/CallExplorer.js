@@ -15,7 +15,7 @@ describe("Call Explorer of Adepsi", () => {
     cy.wait(4000);
     cy.Quick_Filter_test();
   });
-  it("Add Some Filter In Call Explorer ", () => {
+  it("Add Some Filter In Call Explorer and Also Save Filter and Delete Filter Check ", () => {
     //Add Filter Test
     cy.LoginPage();
     cy.LoginInput();
@@ -25,4 +25,5 @@ describe("Call Explorer of Adepsi", () => {
     cy.Add_Filter_Test();
     cy.wait(3000);
   });
+  
 });
