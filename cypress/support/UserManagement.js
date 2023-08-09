@@ -1,4 +1,4 @@
-Cypress.Commands.add("UserMangement", () => {
+Cypress.Commands.add("CreateUser", () => {
     cy.get(".material-icons.arrow-rit.ng-star-inserted").click();
     cy.get('[routerlink="/home/settings/user-management"]').click();
     cy.wait(6000);
@@ -27,3 +27,11 @@ Cypress.Commands.add("UserMangement", () => {
     cy.get(".add-edit-btn > .mat-ripple").click();
     cy.wait(6000);
 });
+
+Cypress.Commands.add("updateUser",()=>{
+    //pending
+
+})
+Cypress.Commands.add("deleteUser",()=>{
+//pending
+})

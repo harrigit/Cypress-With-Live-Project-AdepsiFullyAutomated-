@@ -4,8 +4,21 @@ describe('Call Rule Access Of Adepsi', () => {
         cy.LoginInput();
         cy.wait(4000);
 
-        cy.CallRuleAccess();
+        cy.CreateCallRule();
         
+        
+    });
+    it('User Must Go To Call Rule Access Page and Update Call Rule Access', () => {
+        cy.LoginPage();
+        cy.LoginInput();
+        cy.wait(4000);
+        cy.updateCallRule();
+    });
+    it('User Must Go To Call Rule Access Page and Delete Call Rule Access', () => {
+        cy.LoginPage();
+        cy.LoginInput();
+        cy.wait(4000);
+        cy.deleteCallRule();
     });
     
 });
