@@ -19,6 +19,8 @@ import './AuditTrail'
 import './Login'
 import './CallExploreR'
 import './CAllTags'
+import './CallRuleAccess'
+import './UserManagement'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
