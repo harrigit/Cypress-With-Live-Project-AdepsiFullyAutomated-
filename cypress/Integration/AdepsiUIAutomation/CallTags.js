@@ -5,6 +5,20 @@ describe(' Check Call Tags ', () => {
         cy.wait(4000);
 
 
-        cy.callTags();
+        cy.callTagsCreate();
+    });
+    it('user Must Update A tag', () => {
+        cy.LoginPage();
+        cy.LoginInput();
+        cy.wait(4000);
+
+cy.updatetag();
+        
+    });
+    it('User Must Delete A tag', () => {
+        cy.LoginPage();
+        cy.LoginInput();
+        cy.wait(4000);
+        cy.deleteTag();
     });
 });

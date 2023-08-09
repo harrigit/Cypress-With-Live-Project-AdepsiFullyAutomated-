@@ -1,7 +1,10 @@
-Cypress.Commands.add("callTags", () => {
+Cypress.Commands.add("callTagsCreate", () => {
   cy.get(".material-icons.arrow-rit.ng-star-inserted").click();
   cy.get('[routerlink="/home/settings/tags"]').click();
   cy.wait(3000);
+
+
+  //add Tag button
   cy.get(".btn").click();
 
   //Unique Tag Name Logic
@@ -29,21 +32,38 @@ Cypress.Commands.add("callTags", () => {
     cy.get(':nth-child(1) > :nth-child(7) > div.ng-tns-c119-3 > .mat-menu-trigger > .mat-icon').click();
 
     //Update Check
-    cy.get('.menu > :nth-child(1)').click();
+    
+
+
+    //Delete Check 
+    
+
+
+
+
+});
+Cypress.Commands.add("updatetag",()=>{
+  cy.get(".material-icons.arrow-rit.ng-star-inserted").click();
+  cy.get('[routerlink="/home/settings/tags"]').click();
+  cy.wait(3000);
+  cy.get(':nth-child(1) > :nth-child(7) > div.ng-tns-c119-3 > .mat-menu-trigger > .mat-icon').click();
+  cy.get('.menu > :nth-child(1)').click();
     cy.get('[placeholder="Tag Name"]').click().type("Updated");
     cy.get('.action-btn').click();
     cy.wait(5000);
 
 
 
-    //Delete Check 
-    cy.get(':nth-child(1) > :nth-child(7) > div.ng-tns-c119-3 > .mat-menu-trigger > .mat-icon').click();
+})
+Cypress.Commands.add("deleteTag",()=>{
+  cy.get(".material-icons.arrow-rit.ng-star-inserted").click();
+  cy.get('[routerlink="/home/settings/tags"]').click();
+  cy.wait(3000);
+
+  cy.get(':nth-child(1) > :nth-child(7) > div.ng-tns-c119-3 > .mat-menu-trigger > .mat-icon').click();
     cy.get('.menu > :nth-child(2)').click();
     cy.get('[data-placeholder="Reason for deletion"]').click().type("Deleting With Automation Code");
     cy.get('.action-btn-bg').click();
     cy.wait(5000);
 
-
-
-
-});
+})
