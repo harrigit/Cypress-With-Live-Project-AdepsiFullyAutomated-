@@ -21,6 +21,7 @@ import './CallExploreR'
 import './CAllTags'
 import './CallRuleAccess'
 import './UserManagement'
+import './integration'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
