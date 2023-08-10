@@ -13,6 +13,13 @@ describe("User Management of Adepsi", () => {
     cy.assignRoles();
       
   });
+  it('Revoke all Roles of  New User', () => {
+    cy.LoginPage();
+    cy.LoginInput();
+    cy.wait(4000);
+    cy.revokeRule();
+      
+  });
 
   it("Update User Check", () => {
     cy.LoginPage();
