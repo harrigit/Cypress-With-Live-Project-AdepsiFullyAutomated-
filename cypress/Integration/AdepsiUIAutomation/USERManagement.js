@@ -6,6 +6,13 @@ describe("User Management of Adepsi", () => {
 
     cy.CreateUser();
   });
+  it('Assign Roles To New User', () => {
+    cy.LoginPage();
+    cy.LoginInput();
+    cy.wait(4000);
+    cy.assignRoles();
+      
+  });
 
   it("Update User Check", () => {
     cy.LoginPage();

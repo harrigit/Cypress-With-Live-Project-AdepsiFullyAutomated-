@@ -28,6 +28,39 @@ Cypress.Commands.add("CreateUser", () => {
     cy.wait(6000);
 });
 
+Cypress.Commands.add("assignRoles",()=>{
+    cy.get(".material-icons.arrow-rit.ng-star-inserted").click();
+    cy.get('[routerlink="/home/settings/user-management"]').click();
+    cy.wait(6000);
+    cy.get(':nth-child(1) > :nth-child(7) > div > .mat-menu-trigger > .mat-icon').click();
+    cy.get(':nth-child(1) > .mat-ripple').click();
+    cy.get(':nth-child(1) > .show > .mat-ripple').click();
+    cy.wait(2000);
+    cy.get(':nth-child(2) > .show > .mat-ripple').click();
+    cy.wait(2000);
+    cy.get(':nth-child(3) > .show > .mat-ripple').click();
+    cy.wait(2000);
+    cy.get(':nth-child(4) > .show > .mat-ripple').click();
+    cy.wait(2000);
+    cy.get(':nth-child(5) > .show > .mat-ripple').click();
+    cy.wait(2000);
+    cy.get(':nth-child(6) > .show > .mat-ripple').click();
+    cy.wait(2000);
+    cy.get(':nth-child(7) > .show > .mat-ripple').click();
+    cy.wait(2000);
+    cy.get(':nth-child(8) > .show > .mat-ripple').click();
+    cy.wait(2000);
+    cy.get(':nth-child(9) > .show > .mat-ripple').click();
+    cy.wait(2000);
+    cy.get(':nth-child(10) > .show > .mat-ripple').click();
+    cy.wait(2000);
+
+    cy.wait(3000);
+    cy.get('.mat-ripple > .material-icons').click();
+    cy.wait(2000);
+
+})
+
 Cypress.Commands.add("updateUser",()=>{
     //pending
     cy.get(".material-icons.arrow-rit.ng-star-inserted").click();
