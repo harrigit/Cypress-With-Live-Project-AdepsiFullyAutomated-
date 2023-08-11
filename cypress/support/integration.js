@@ -16,7 +16,7 @@ Cypress.Commands.add("INtegration", () => {
     cy.wait(2000);
     cy.get('[data-test="signin-button"]').click();
     cy.wait(10000);
-    cy.wait(15000);
+    cy.wait(50000);
     cy.get('[data-test="form-flow-page-footer-next"] > .Box-sc-14d2slk-0').click();
     cy.wait(3000);
     cy.get('[data-test="add-numbers"] > .kuoQfA').click();
@@ -27,7 +27,7 @@ Cypress.Commands.add("INtegration", () => {
     cy.wait(10000);
     
   });
-  cy.wait(2000);
+  cy.wait(5000);
   cy.get('.add-Tag-btn').click();
   cy.wait(5000);
   cy.get(".material-icons.arrow-rit.ng-star-inserted").click();
