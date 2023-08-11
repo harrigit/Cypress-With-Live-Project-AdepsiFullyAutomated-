@@ -23,6 +23,7 @@ import './CallRuleAccess'
 import './UserManagement'
 import './integration'
 import './Dashboard'
+import './Profile'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
