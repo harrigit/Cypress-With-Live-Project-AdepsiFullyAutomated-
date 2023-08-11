@@ -36,9 +36,18 @@ Cypress.Commands.add("Call_Explorer_RangeSet", () => {
     cy.get(
       "#mat-checkbox-17 > .mat-checkbox-layout > .mat-checkbox-inner-container"
     ).click();
+    cy.get('.mat-ripple > .d-flex > .textOverflow').click();
+    cy.wait(15000);
+    cy.get(':nth-child(7) > .mat-ripple > span > .mat-icon').click();
+    cy.wait(10000);
+    cy.get('.close-audio > .mat-ripple > span.ng-tns-c129-3').click();
+    cy.wait(5000);
+
   
     cy.wait(1000);
     cy.wait(2000);
+   
+    
     //Save Filter
     cy.get('[mattooltip="Save filter"]').click();
   
