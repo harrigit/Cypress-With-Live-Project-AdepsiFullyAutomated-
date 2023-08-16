@@ -27,9 +27,9 @@ Cypress.Commands.add("INtegration", () => {
     cy.wait(10000);
     
   });
-  cy.wait(5000);
+  cy.wait(20000);
   cy.get('.add-Tag-btn').click();
-  cy.wait(5000);
+  cy.wait(10000);
   cy.get(".material-icons.arrow-rit.ng-star-inserted").click();
   cy.wait(1000);
   cy.get('[routerlink="/home/settings/integrations"]').click();

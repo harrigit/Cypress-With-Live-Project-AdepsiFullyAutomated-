@@ -6,6 +6,6 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     //Telling the path where Our Files are Located
-    specPattern: 'cypress/Integration/AdepsiUIAutomation/*.js'
+    specPattern: 'cypress/Integration/AdepsiAutomation/*.js'
   },
 });
