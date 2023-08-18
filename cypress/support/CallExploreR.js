@@ -2,7 +2,7 @@
 //call Explorer Range Set
 Cypress.Commands.add("Call_Explorer_RangeSet", () => {
     cy.get(".activeBtn").click();
-    cy.get(".p-calendar > .ng-tns-c110-4").click();
+    cy.get('.p-calendar > .ng-tns-c113-5').click();
     cy.get(".p-datepicker-year").click();
     cy.get(".p-yearpicker > :nth-child(1)").click();
   
@@ -44,7 +44,7 @@ Cypress.Commands.add("Call_Explorer_RangeSet", () => {
     
     
     
-    cy.get('.close-audio > .mat-ripple > span.ng-tns-c129-3').click();
+    cy.get('span.ng-tns-c132-4 > .mat-icon').click();
     cy.wait(5000);
 
   
