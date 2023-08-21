@@ -30,7 +30,7 @@ Cypress.Commands.add("INtegration", () => {
    
   });
 
-  cy.wait(5000);
+  cy.wait(20000);
   cy.get('.add-Tag-btn').click();
   cy.wait(10000);
   cy.get(".material-icons.arrow-rit.ng-star-inserted").click();
@@ -61,6 +61,8 @@ Cypress.Commands.add("INtegration", () => {
   //Enable Integration
   cy.get('.ng-dirty').click();
   cy.wait(6000);
+  
+
   
 
 
