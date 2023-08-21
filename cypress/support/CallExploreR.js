@@ -68,7 +68,6 @@ Cypress.Commands.add("Call_Explorer_RangeSet", () => {
       return result;
     }
     const randomName = generateRandomName();
-  
     cy.get('[placeholder="Filter Name"]').click().type(randomName);
     cy.wait(1000);
     cy.get(".mat-ripple.save-btn").click({ force: true });
