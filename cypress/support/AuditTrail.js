@@ -6,7 +6,7 @@ Cypress.Commands.add("AuditTrail", () => {
     cy.get('.p-datepicker-year').click();
     cy.get('.p-yearpicker > :nth-child(1)').click();
     cy.get('.p-monthpicker > [tabindex="0"]').click();
-    cy.get(':nth-child(1) > :nth-child(4) > .p-ripple').click();
+    cy.get('tbody.ng-tns-c115-5 > :nth-child(1) > :nth-child(4) > .p-ripple').click();
     cy.get('.search-btn').click();
     cy.wait(3000);
 
