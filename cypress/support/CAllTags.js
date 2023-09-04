@@ -29,7 +29,8 @@ Cypress.Commands.add("callTagsCreate", () => {
     cy.wait(1000);
     cy.get('.mat-ripple.action-btn').click();
     cy.wait(3000);
-    cy.get(':nth-child(1) > :nth-child(7) > div.ng-tns-c122-4 > .mat-menu-trigger > .mat-icon').click();
+    
+    cy.get(':nth-child(2) > :nth-child(7) > div.ng-tns-c122-6 > .mat-menu-trigger > .mat-icon').click();
 
     //Update Check
     

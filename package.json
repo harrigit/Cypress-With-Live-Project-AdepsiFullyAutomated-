@@ -8,7 +8,7 @@
   "author": "Muhammad Haris Khan",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.17.1"
+    "cypress": "^13.1.0"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
     "url": "https://github.com/harrigit/Cypress-With-Live-Project-AdepsiFullyAutomated-/issues"
   },
   "homepage": "https://github.com/harrigit/Cypress-With-Live-Project-AdepsiFullyAutomated-#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "init": "^0.1.2"
+  }
 }
