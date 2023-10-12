@@ -21,12 +21,13 @@ Cypress.Commands.add("INtegration", () => {
     cy.wait(40000);
     cy.get('[data-test="form-flow-page-footer-next"] > .Box-sc-14d2slk-0').click();
     cy.wait(3000);
-    cy.get('[data-test="add-numbers"] > .kuoQfA').click();
-    cy.get('.sc-dmlEhJ').click();
+    cy.get('[data-test="add-numbers"] > .gzHPsN').click();
+     // iQvYAI hgDOjj sc-16rzzyx-0 bSpwIt
+     cy.get('.sc-kgvGAC').click();
     cy.get('[data-test="modal-form-submit-button"]').click();
     cy.wait(3000);
     cy.get('[data-test="form-flow-page-footer-next"] > .Box-sc-14d2slk-0').click();
-   // cy.wait(20000);
+    cy.wait(50000);
    
   });
 
